@@ -8,4 +8,4 @@
 
     # this server, you can host on local only till now.
 
-    # it will ask for address from client side and will fetch api details from localhost url.
+    # it will ask for address from client side and will fetch api details from heroku deployed server.

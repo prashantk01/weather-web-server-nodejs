@@ -12,7 +12,8 @@ const forecast = (latitude, longitude, callback) => {
           // console.log("Not able to fetch data !!");
             callback('Not able to fetch data !! try another search', undefined);
         } else {
-            callback(undefined, body.current.weather_descriptions[0] + ' right now , It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip + '% chance of rain.')
+            console.log(body)
+            callback(undefined, body.current.weather_descriptions[0] + ' right now , It is currently ' + body.current.temperature + ' degress out. Humidity is  ' + body.current.humidity + '% . Visibility is '+ body.current.visibility + ' km.')
         }
     })
 }
