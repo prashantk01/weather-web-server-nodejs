@@ -16,7 +16,7 @@ const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/{'+address+'}.jso
             callback(undefined, {
                 latitude: latitude,
                 longitude: longitude,
-                placeName: body.features[0].place_name,
+                location: body.features[0].place_name,
             })
         }
     })
